@@ -1,0 +1,141 @@
+.mycard-container {
+  display: flex;
+  flex-direction: column;
+}
+.shopcard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20%;
+  padding: 2%;
+  width: 100%;
+}
+.shopimage {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: flex-end;
+}
+.shopimage img {
+  object-fit: cover;
+  background-size: cover;
+  width: inherit;
+  height: inherit;
+  border-radius: 1rem;
+}
+.shopheader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.shopfooter {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.shopadd {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.shopprice {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.discount {
+  position: absolute;
+  /* top: 28%; */
+  border-top: 72px solid #d11d67;
+  border-left: 72px solid transparent;
+}
+
+.discount span {
+  position: absolute;
+  color: #fff;
+  top: -60px;
+  right: 8px;
+  z-index: 300;
+}
+.shopfooter input {
+  width: 150px;
+  height: fit-content;
+  margin-top: 6%;
+  color: #61677c;
+  text-shadow: 1px 1px 0 #fff;
+  padding: 12px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
+  transition: all 0.2s ease-in-out;
+}
+.shopfooter a {
+  margin: 10px 0;
+  box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.5);
+  font-size: 1.5rem;
+  padding: 2%;
+  border-radius: 10px;
+  text-align: center;
+}
+.shopfooter a:hover {
+  box-shadow: inset 9px 9px 16px rgba(163, 177, 198, 0.6),
+    inset -9px -9px 16px rgba(255, 255, 255, 0.5),
+    9px 9px 16px rgba(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  color: #d11d67;
+}
+
+.shopaddtocart {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5%;
+}
+.shopaddtocart a {
+  width: 100%;
+  box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.5);
+  font-size: 1.5rem;
+  padding: 2%;
+  border-radius: 100px;
+  text-align: center;
+  color: #d11d67;
+}
+.shopaddtocart a:hover {
+  box-shadow: inset 9px 9px 16px rgba(163, 177, 198, 0.6),
+    inset -9px -9px 16px rgba(255, 255, 255, 0.5),
+    9px 9px 16px rgba(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 800px) {
+  .shopcard {
+    width: 23%;
+    margin-top: 10%;
+  }
+  .shopheader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .shopfooter {
+    width: 100%;
+  }
+  .mycard-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .shopfooter input {
+    width: 70px;
+  }
+}

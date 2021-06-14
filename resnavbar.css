@@ -6,7 +6,7 @@ body {
   margin: 0;
   font-size: bold;
   font-family: "Dosis", sans-serif;
-  background-color: #e0dede;
+  background-color: #f7fcff;
 }
 
 header {
@@ -73,18 +73,6 @@ nav a:hover {
   color: #fff;
 }
 
-section {
-  position: absolute;
-  margin-top: 70px;
-  min-height: 80vh;
-  max-height: max-content;
-  display: flex;
-  background-color: #472b84;
-  box-sizing: border-box;
-  padding: 20px;
-  width: 100%;
-}
-
 @media screen and (min-width: 800px) {
   .burger {
     display: none;
@@ -106,5 +94,8 @@ section {
   li {
     float: right;
     margin-right: 16px;
+  }
+  section {
+    flex-direction: row;
   }
 }
